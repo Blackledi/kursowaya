@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>862</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <italic>true</italic>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QPlainTextEdit" name="plainTextEdit">
+      <property name="font">
+       <font>
+        <italic>false</italic>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="undoRedoEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="lineWrapMode">
+       <enum>QPlainTextEdit::NoWrap</enum>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>650</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionNew"/>
+   </widget>
+   <widget class="QMenu" name="menuOption">
+    <property name="title">
+     <string>Option</string>
+    </property>
+    <widget class="QMenu" name="menuFont_Size">
+     <property name="title">
+      <string>Font Size</string>
+     </property>
+     <addaction name="action8pt"/>
+     <addaction name="action9pt"/>
+     <addaction name="action10pt"/>
+     <addaction name="action11pt"/>
+     <addaction name="action12pt"/>
+     <addaction name="action14pt"/>
+     <addaction name="action16pt"/>
+     <addaction name="action18pt"/>
+     <addaction name="action22pt_2"/>
+     <addaction name="action22pt"/>
+     <addaction name="action26pt"/>
+     <addaction name="action28pt"/>
+     <addaction name="action36pt"/>
+     <addaction name="action48pt"/>
+     <addaction name="action72pt"/>
+    </widget>
+    <widget class="QMenu" name="menuField_Size">
+     <property name="title">
+      <string>Field Size</string>
+     </property>
+     <addaction name="actionA4"/>
+     <addaction name="actionA5"/>
+    </widget>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>Font </string>
+     </property>
+     <addaction name="actionAlgerian"/>
+     <addaction name="actionArial"/>
+     <addaction name="actionArial_Black"/>
+     <addaction name="actionCourier_New"/>
+     <addaction name="actionGabriola"/>
+     <addaction name="actionGigi"/>
+     <addaction name="actionGost_type_A"/>
+     <addaction name="actionInk_Free"/>
+     <addaction name="actionJokerman"/>
+     <addaction name="actionMicrosoft_Sans_Serif"/>
+     <addaction name="actionMicrosoft_Uighur"/>
+     <addaction name="actionVivaldi"/>
+     <addaction name="actionSitka"/>
+     <addaction name="actionSimSun"/>
+     <addaction name="actionTiger"/>
+     <addaction name="actionTime_New_Romen"/>
+     <addaction name="actionTerminal"/>
+     <addaction name="actionWingdings_3"/>
+    </widget>
+    <widget class="QMenu" name="menuText_Selection">
+     <property name="title">
+      <string>Font Style</string>
+     </property>
+     <addaction name="action"/>
+     <addaction name="action_2"/>
+     <addaction name="action_3"/>
+    </widget>
+    <addaction name="menuFont_Size"/>
+    <addaction name="menu"/>
+    <addaction name="menuText_Selection"/>
+    <addaction name="menuField_Size"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOption"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="action12pt">
+   <property name="text">
+    <string>12pt</string>
+   </property>
+  </action>
+  <action name="action18pt">
+   <property name="text">
+    <string>18pt</string>
+   </property>
+  </action>
+  <action name="action9pt">
+   <property name="text">
+    <string>9pt</string>
+   </property>
+  </action>
+  <action name="action22pt">
+   <property name="text">
+    <string>24pt</string>
+   </property>
+  </action>
+  <action name="action14pt">
+   <property name="text">
+    <string>14pt</string>
+   </property>
+  </action>
+  <action name="action8pt">
+   <property name="text">
+    <string>8pt</string>
+   </property>
+  </action>
+  <action name="action10pt">
+   <property name="text">
+    <string>10pt</string>
+   </property>
+  </action>
+  <action name="action11pt">
+   <property name="text">
+    <string>11pt</string>
+   </property>
+  </action>
+  <action name="action16pt">
+   <property name="text">
+    <string>16pt</string>
+   </property>
+  </action>
+  <action name="action22pt_2">
+   <property name="text">
+    <string>22pt</string>
+   </property>
+  </action>
+  <action name="action26pt">
+   <property name="text">
+    <string>26pt</string>
+   </property>
+  </action>
+  <action name="action28pt">
+   <property name="text">
+    <string>28pt</string>
+   </property>
+  </action>
+  <action name="action36pt">
+   <property name="text">
+    <string>36pt</string>
+   </property>
+  </action>
+  <action name="action48pt">
+   <property name="text">
+    <string>48pt</string>
+   </property>
+  </action>
+  <action name="action72pt">
+   <property name="text">
+    <string>72pt</string>
+   </property>
+  </action>
+  <action name="actionA4">
+   <property name="text">
+    <string>A4</string>
+   </property>
+  </action>
+  <action name="actionA5">
+   <property name="text">
+    <string>A5</string>
+   </property>
+  </action>
+  <action name="actionArial">
+   <property name="text">
+    <string>Arial</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionAlgerian">
+   <property name="text">
+    <string>Algerian</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Algerian</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionArial_Black">
+   <property name="text">
+    <string>Arial Black</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionMicrosoft_Sans_Serif">
+   <property name="text">
+    <string>Microsoft Sans Serif</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Sans Serif</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionTiger">
+   <property name="text">
+    <string>Tiger</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tiger</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionVivaldi">
+   <property name="text">
+    <string>Vivaldi</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Vivaldi</family>
+     <italic>true</italic>
+    </font>
+   </property>
+  </action>
+  <action name="actionSitka">
+   <property name="text">
+    <string>Sitka</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sitka</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionSimSun">
+   <property name="text">
+    <string>SimSun</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>SimSun</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionJokerman">
+   <property name="text">
+    <string>Jokerman</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Jokerman</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionInk_Free">
+   <property name="text">
+    <string>Ink Free</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ink Free</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionGigi">
+   <property name="text">
+    <string>Gigi</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gigi</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionGabriola">
+   <property name="text">
+    <string>Gabriola</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gabriola</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionMicrosoft_Uighur">
+   <property name="text">
+    <string>Microsoft Uighur</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft Uighur</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionGost_type_A">
+   <property name="text">
+    <string>Gost type A</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>GOST type A</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionTerminal">
+   <property name="text">
+    <string>Terminal</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Terminal</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionWingdings_3">
+   <property name="text">
+    <string>Wide Latin</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Wide Latin</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionTime_New_Romen">
+   <property name="text">
+    <string>Times New Roman</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionCourier_New">
+   <property name="text">
+    <string>Courier New</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Courier New</family>
+    </font>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Ж</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Ч</string>
+   </property>
+   <property name="font">
+    <font>
+     <underline>true</underline>
+    </font>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>К</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <italic>true</italic>
+    </font>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionCopy_2">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionPast">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
